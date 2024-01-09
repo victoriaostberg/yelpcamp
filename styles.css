@@ -409,6 +409,10 @@ footer{
     margin-bottom: 20px;
 }
 
+.review-btn{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 830px) {
     .landing{
