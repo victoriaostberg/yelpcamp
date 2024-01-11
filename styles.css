@@ -350,25 +350,33 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto auto;
+    gap: 40px;
 }
 
 .ulap-map{
     display: flex;
     justify-content: center;;
     border: 1pt solid #66625F;
+    border-radius: 3px;
     padding: 20px;
     width: fit-content;
     height: fit-content;
 }
 
+.ulap-map-img{
+    border-radius: 3px;
+}
+
 .ulap-info{
     border: 1pt solid #66625F;
+    border-radius: 3px;
     padding: 20px;
 }
 
 .ulap-img{
     width: 100%;
     height: auto;
+    border-radius: 3px;
 }
 
 .location-price{
@@ -388,8 +396,8 @@ footer{
 .comments{
     grid-column-start: 2;
     border: 1pt solid #66625F;
+    border-radius: 3px;
     padding: 20px;
-    margin-top: 40px;
 }
 
 .posted-by{
@@ -411,6 +419,11 @@ footer{
 
 .review-btn{
     text-align: center;
+}
+
+.review-btn > img, 
+.review-btn > span{
+    vertical-align: middle;
 }
 
 
@@ -451,6 +464,10 @@ footer{
 
     .search-container{
         width: 80%;
+    }
+
+    a.home{
+        display: none;
     }
 
     .suggestions-container{
@@ -502,6 +519,45 @@ footer{
     .sign-in-testimonial{
         width: 70%;
     }
+
+    .ulap-container{
+        width: 90%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+
+    .comments{
+        grid-column-start: 1;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .review-btn-div{
+        justify-content: flex-start;
+    }
+
+    .ulap-info{
+        padding: 50px;
+    }
+
+    .ulap-map{
+        grid-row-start: 3;
+        padding: 50px;
+        width: auto;
+    }
+
+    .ulap-map-div{
+        width: 100%;
+    }
+
+    .ulap-map-img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -536,6 +592,10 @@ footer{
         width: 100%;
     }
 
+    .a-home{
+        display: none;
+    }
+
     .suggestions{
         margin-top: 30px;
     }
@@ -558,5 +618,17 @@ footer{
 
     .sign-navbar{
         width: 90%;
+    }
+
+    .comments{
+        padding: 30px;
+    }
+
+    .ulap-info{
+        padding: 30px;
+    }
+
+    .ulap-map{
+       padding: 30px;
     }
 }
